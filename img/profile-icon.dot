@@ -1,0 +1,16 @@
+// This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+graph {
+	layout=neato
+	node[shape=circle,color="#2fa4e7",style=filled]
+	edge[penwidth=4]
+
+	a -- b
+	a -- c
+	b -- c [constraint=false]
+
+	a [label=""]
+	b [label=""]
+	c [label=""]
+}
+

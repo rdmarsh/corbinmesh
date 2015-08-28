@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="David Marsh">
+        <link rel="canonical" href="http://corbinmesh.net/ubiquiti/">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+	<title>Ubiquiti - CorbinMesh</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../custom.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">CorbinMesh</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../connect/">Connect</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../contribute/">Contribute</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../setup-node/">Setup Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../secure-node/">Secure Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../admin-node/">Admin Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../mesh-tips/">Mesh Tips</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../supported-devices/">Supported Devices</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../antennas/">Antennas</a>
+                            </li>
+                        
+                            <li class="active">
+                                <a href="./">Ubiquiti</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../tp-link/">TP-Link</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../mikrotik/">Mikrotik</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../pics/">Pics</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../news/">News</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../faq/">FAQs</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../terms/">Terms</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../code-of-conduct/">Code of Conduct</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../contact/">Contact</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="../antennas/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../tp-link/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#bullet">Bullet</a></li>
+        
+            <li><a href="#models">Models</a></li>
+        
+            <li><a href="#manuals">Manuals</a></li>
+        
+            <li><a href="#links">Links</a></li>
+        
+    
+        <li class="main "><a href="#nanostation">NanoStation</a></li>
+        
+            <li><a href="#models_1">Models</a></li>
+        
+            <li><a href="#manuals_1">Manuals</a></li>
+        
+            <li><a href="#links_1">Links</a></li>
+        
+    
+        <li class="main "><a href="#picostation">PicoStation</a></li>
+        
+            <li><a href="#models_2">Models</a></li>
+        
+            <li><a href="#manuals_2">Manuals</a></li>
+        
+            <li><a href="#links_2">Links</a></li>
+        
+    
+        <li class="main "><a href="#rocket">Rocket</a></li>
+        
+            <li><a href="#models_3">Models</a></li>
+        
+            <li><a href="#manuals_3">Manuals</a></li>
+        
+            <li><a href="#links_3">Links</a></li>
+        
+    
+        <li class="main "><a href="#unifi-ap">UniFi AP</a></li>
+        
+            <li><a href="#links_4">Links</a></li>
+        
+    
+        <li class="main "><a href="#unifi-outdoor">UniFi Outdoor</a></li>
+        
+            <li><a href="#links_5">Links</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>These models are manufactured by Ubiquiti.</p>
+<h1 id="bullet">Bullet</h1>
+<p>Bullets are designed to be mounted outdoors in full weather, however Amazon reviews state they do not do well in a fully exposed locations. Suggestion is to mount under eves of a house, on a balcony etc, but avoid direct weather. Some waterproofing with tape might help prevent water intrusion.</p>
+<h2 id="models">Models</h2>
+<p>Bullets have external antenna connections.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BM2HP</td>
+<td>2.4 GHz</td>
+<td>Ant dependant</td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>BM2-Ti</td>
+<td>2.4 GHz</td>
+<td>Ant dependant</td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>BM5HP</td>
+<td>5 GHz</td>
+<td>Ant dependant</td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>BM5-Ti</td>
+<td>5 GHz</td>
+<td>Ant dependant</td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manuals">Manuals</h2>
+<ul>
+<li><a href="../pdf/bm_ds_web.pdf">BulletM Data Sheet</a></li>
+<li><a href="../pdf/BulletM_Ti_DS.pdf">BulletTi Data Sheet</a></li>
+<li><a href="../pdf/Bullet_Pico_Loco_NS_QSG.pdf">Generic Quick Start Guide</a></li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://www.ubnt.com/airmax/bulletm/">Manufactures page</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/airmaxm">OpenWRT Airmax M</a></li>
+</ul>
+<h1 id="nanostation">NanoStation</h1>
+<p>Of the models listed below, only the NSM2 (M2) and NSM5 (M5) are officially supported by Commotion.</p>
+<h2 id="models_1">Models</h2>
+<h3 id="nanostation-m">NanoStation M</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NSM2</td>
+<td>2.4 GHz</td>
+<td></td>
+<td>11 dBi</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>NSM3</td>
+<td>3 GHz</td>
+<td></td>
+<td>13 dBi</td>
+<td>No</td>
+</tr>
+<tr>
+<td>NSM365</td>
+<td>3.65 GHz</td>
+<td></td>
+<td>13 dBi</td>
+<td>No</td>
+</tr>
+<tr>
+<td>NSM5</td>
+<td>5 GHz</td>
+<td></td>
+<td>16 dBi</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nanostation-loco-m">NanoStation Loco M</h3>
+<p>Loco models appear to be lower cost, lower distance models. They may be compatible as they&rsquo;re basically the same platform as the above models.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locoM2</td>
+<td>2.4 GHz</td>
+<td></td>
+<td>8 dBi</td>
+<td>Maybe</td>
+</tr>
+<tr>
+<td>locoM5</td>
+<td>5 GHz</td>
+<td></td>
+<td>13 dBi</td>
+<td>No</td>
+</tr>
+<tr>
+<td>locoM9</td>
+<td>900 MHz</td>
+<td></td>
+<td>8 dBi</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manuals_1">Manuals</h2>
+<ul>
+<li><a href="../pdf/NanoStation_M_Loco_M_QSG.pdf">NanoStation Quick Start Guide</a></li>
+<li><a href="../pdf/nsm_ds_web.pdf">NanoStation Data Sheet</a></li>
+<li><a href="../pdf/Bullet_Pico_Loco_NS_QSG.pdf">Generic Quick Start Guide</a></li>
+</ul>
+<h2 id="links_1">Links</h2>
+<ul>
+<li><a href="https://www.ubnt.com/airmax/nanostationm/">Manufactures page</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/nanostationm2">OpenWRT NanoStation M2 / Loco M2</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/nanostationm5">OpenWRT NanoStation M5 / Loco M5</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/airmaxm">OpenWRT Airmax M</a></li>
+</ul>
+<h1 id="picostation">PicoStation</h1>
+<p>PicoStations are manufactured by Ubiquiti.</p>
+<p>Can be mounted under eves of a house, on a balcony etc, but avoid direct sun and weather. Some waterproofing with tape might help.</p>
+<p>Of the models listed below, only the PICOM2HP (M2) are officially supported by Commotion.</p>
+<h2 id="models_2">Models</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PICOM2HP</td>
+<td>2.4 GHz</td>
+<td>Omni</td>
+<td>5 dBi (US)<br />2 dBi (EU)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manuals_2">Manuals</h2>
+<ul>
+<li><a href="../pdf/picom2hp_DS.pdf">PicoStation Data Sheet</a></li>
+<li><a href="../pdf/Bullet_Pico_Loco_NS_QSG.pdf">Generic Quick Start Guide</a></li>
+</ul>
+<h2 id="links_2">Links</h2>
+<ul>
+<li><a href="https://www.ubnt.com/airmax/picostationm/">Manufactures page</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/picostationm2">OpenWRT PicoStation M2</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/airmaxm">OpenWRT Airmax M</a></li>
+</ul>
+<h1 id="rocket">Rocket</h1>
+<p>Rockets are manufactured by Ubiquiti.</p>
+<p>Rockets have external antenna connections.</p>
+<h2 id="models_3">Models</h2>
+<h3 id="rocketm">RocketM</h3>
+<p>RocketMs have external antenna connections.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M2</td>
+<td>2.4 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>3 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>M365</td>
+<td>3.65 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>5 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>M900</td>
+<td>900 MHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>RM2-Ti</td>
+<td>2.4 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>RM5-Ti</td>
+<td>5 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rocketac">Rocketac</h3>
+<p>Rocketacs have external antenna connections.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Frequency</th>
+<th>Ant type</th>
+<th>Gain</th>
+<th>Compatible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R5AC-Lite</td>
+<td>Full-Band 5 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R5AC-PTMP</td>
+<td></td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+<tr>
+<td>R5AC-PTP</td>
+<td>Mid-Band 5 GHz</td>
+<td></td>
+<td>Ant dependant</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manuals_3">Manuals</h2>
+<ul>
+<li><a href="../pdf/RocketM_DS.pdf">RocketM Data Sheet</a></li>
+</ul>
+<h2 id="links_3">Links</h2>
+<ul>
+<li><a href="https://www.ubnt.com/airmax/rocketm/">Manufactures page</a></li>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/airmaxm">OpenWRT Airmax M</a></li>
+</ul>
+<h1 id="unifi-ap">UniFi AP</h1>
+<p>TBA</p>
+<h2 id="links_4">Links</h2>
+<ul>
+<li><a href="http://wiki.openwrt.org/toh/ubiquiti/unifi">Ubiquiti UniFi AP</a></li>
+</ul>
+<h1 id="unifi-outdoor">UniFi Outdoor</h1>
+<p>TBA</p>
+<h2 id="links_5">Links</h2>
+<ul>
+<li><a href="https://www.ubnt.com/unifi/unifi-ap-outdoor/">manufact site</a></li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Map images <a rel="license" href="http://www.openstreetmap.org/copyright">&#169; OpenStreetMap contributors</a>.<br />Shreenshots of Commotion <a rel="license" href="http://commotionwireless.net/about/license-privacy/">Copyright &#169; 2013 Josh King</a>.<br /><a href="http://corbinmesh.net/">CorbinMesh</a> content by David Marsh is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+
+        <!--
+        MkDocs version  : 0.12.2
+        Docs Build Date : 2015-08-28 13:12:56.556639
+        -->
+    </body>
+</html>

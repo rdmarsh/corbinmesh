@@ -1,0 +1,41 @@
+// This work is licensed under a Creative Commons Attribution 4.0 International License.
+// Hub and Spoke network diagram
+
+graph {
+	{
+	rank=same
+		a
+		b
+		c
+	}
+	{
+	rank=same
+		d
+		w [color="#2fa4e7",style=filled,fontcolor=white,fontname=bold]
+		e
+	}
+	{
+	rank=same
+		u [color="#2fa4e7",style=filled,fontcolor=white,fontname=bold]
+		f
+		g	
+	}
+
+	a -- w
+	w -- u [color=red,penwidth=2,style=dashed]
+
+	b -- w -- f
+	d -- w -- e
+	c -- w -- g
+
+	a [label=Amy]
+	b [label=Bob]
+	c [label=Cam]
+	d [label=Dan]
+	e [label=Eve]
+	f [label=Fay]
+	g [label=Gav]
+	u [label=You]
+	w [label=www]
+}
+

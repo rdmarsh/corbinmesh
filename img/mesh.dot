@@ -1,0 +1,30 @@
+// This work is licensed under a Creative Commons Attribution 4.0 International License.
+// Mesh network diagram
+
+graph {
+	layout=neato
+
+	a -- b -- c
+	f -- g
+	a -- d
+	c -- e -- g
+	b -- g
+	w -- g
+	w -- u [color=red,penwidth=2,style=dashed]
+	u -- f -- w [color=green,penwidth=2]
+	u -- d -- b -- w [color=orange,penwidth=2]
+
+	w [color="#2fa4e7",style=filled,fontcolor=white,fontname=bold]
+	u [color="#2fa4e7",style=filled,fontcolor=white,fontname=bold]
+
+	a [label=Amy]
+	b [label=Bob]
+	c [label=Cam]
+	d [label=Dan]
+	e [label=Eve]
+	f [label=Fay]
+	g [label=Gav]
+	u [label=You]
+	w [label=www]
+}
+

@@ -1,0 +1,14 @@
+a[href^='http']:after {
+	content: "\2197";
+}
+a[href^="http://corbinmesh"]:after,
+a[href^="http://www.mkdocs.org"]:after,
+a[href^="http://creativecommons.org"]:after,
+a[href^="http://www.openstreetmap.org/copyright"]:after,
+a[href^="http://commotionwireless.net/about/license-privacy/"]:after
+{
+	content: "";
+}
+h2 {
+	border-bottom: 1px solid #aaa;
+}

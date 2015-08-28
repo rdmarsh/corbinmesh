@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="David Marsh">
+        <link rel="canonical" href="http://corbinmesh.net/setup-node/">
+        <link rel="shortcut icon" href="../../favicon.ico">
+        
+
+	<title>Setup Node - CorbinMesh</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../custom.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">CorbinMesh</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../connect/">Connect</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../contribute/">Contribute</a>
+                            </li>
+                        
+                            <li class="active">
+                                <a href="./">Setup Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../secure-node/">Secure Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../admin-node/">Admin Node</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../mesh-tips/">Mesh Tips</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../supported-devices/">Supported Devices</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../antennas/">Antennas</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../ubiquiti/">Ubiquiti</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../tp-link/">TP-Link</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../mikrotik/">Mikrotik</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../pics/">Pics</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../news/">News</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            <li >
+                                <a href="../faq/">FAQs</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../terms/">Terms</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../code-of-conduct/">Code of Conduct</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../contact/">Contact</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="../contribute/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../secure-node/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#setup-node">Setup Node</a></li>
+        
+            <li><a href="#prepare">Prepare</a></li>
+        
+            <li><a href="#node-settings">Node Settings</a></li>
+        
+            <li><a href="#network-settings">Network Settings</a></li>
+        
+            <li><a href="#wireless-network">Wireless Network</a></li>
+        
+            <li><a href="#complete">Complete</a></li>
+        
+            <li><a href="#notes">Notes</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="setup-node">Setup Node</h1>
+<p>How to setup commotion for CorbinMesh. These screenshots were taken with the <a href="../tp-link/#wdr4300">WDR4300</a>, but most <a href="../supported-devices/">supported devices</a> should be similar. https://commotionwireless.net/docs/guides-howtos/</p>
+<p>https://commotionwireless.net/docs/cck/installing-configuring/configure-commotion/</p>
+<p>For some reason if you take too long going through these screen it seems to time out and you&rsquo;ll have to start again. I suspect it was virtual box changig my network settings. You could try connecting to the AP by it&rsquo;s IP address rather than it&rsquo;s name &lsquo;thisnode&rsquo;</p>
+<h2 id="prepare">Prepare</h2>
+<ol>
+<li>Turn wifi off and disconnect </li>
+<li>Connect an <a href="../terms/#ethernet">ethernet</a> network cable to a <a href="../terms/#lan">lan</a> port of the <a href="../terms/#ap">ap</a>. These are the yellow ports on the <a href="../tp-link/#wdr3600">WDR3600</a> and <a href="../tp-link/#wdr4300">WDR4300</a>.</li>
+<li>Open a browser and nagivate to <a href="http://thisnode">http://thisnode</a>, you should see this welcome screen</li>
+<li>Select the &ldquo;setup wizard&rdquo; icon</li>
+</ol>
+<p><img alt="sceenshot" src="../img/commotion-01-welcome-to-commotion.png" /></p>
+<h2 id="node-settings">Node Settings</h2>
+<dl>
+<dt>Node Name</dt>
+<dd>You can name your node anything you want. Random numbers will automatically be appended later to ensure uniqueness on the mesh (for example &ldquo;nodename&rdquo; will become &ldquo;nodename-3262051902&rdquo;). Please be aware that this name will be visible by others on the mesh and abide by the <a href="../code-of-conduct/">code of conduct</a>.</dd>
+<dt>Administration Password</dt>
+<dd>Choose a good secure password for the administator account. Follow standard password advice and don&rsquo;t share this password with others. This will be used for admisitration functions on your node. If you lose it you need to reset and redo your nodes setup to get back into your node.</dd>
+</dl>
+<p>Your screen should look similar to this:</p>
+<p><img alt="sceenshot" src="../img/commotion-03-node-settings-after.png" /></p>
+<h2 id="network-settings">Network Settings</h2>
+<p>The password is an &ldquo;open secret&rdquo; and is only present to prevent people or devices accidentally connecting to the mesh backend. The mesh backend is only used for point to point mesh trafic and general network access is not possible.</p>
+<dl>
+<dt>Mesh Network Name</dt>
+<dd>corbinmesh.net</dd>
+<dt>wifi-device</dt>
+<dd>2.4GHhz</dd>
+<dt>Channel</dt>
+<dd>Channel 11</dd>
+<dt>Mesh Encription</dt>
+<dd>Check this box</dd>
+<dt>Mesh Encription Password</dt>
+<dd>corbinmesh</dd>
+</dl>
+<p>Your screen should look similar to this:</p>
+<p><img alt="Net" src="../img/commotion-05-network-settings-after.png" /></p>
+<h2 id="wireless-network">Wireless Network</h2>
+<p>The wireless network is used by endpoint devices to access CorbinMesh.</p>
+<dl>
+<dt>Name</dt>
+<dd>CorbinWireless</dd>
+<dt>wifi-device</dt>
+<dd>2.4Ghz</dd>
+<dt>Channel</dt>
+<dd>Channel 11</dd>
+<dt>Require a Password</dt>
+<dd>Leave unchecked</dd>
+</dl>
+<p>Your screen should look similar to this:</p>
+<p><img alt="Wireless Network After" src="../img/commotion-07-wireless-network-after.png" /></p>
+<h2 id="complete">Complete</h2>
+<p><img alt="sceenshot" src="../img/commotion-08-basic-configuration-complete.png" />
+16. hit finish
+<br /><img alt="sceenshot" src="../img/commotion-09-confirm-configuration.png" />
+17. hit save and apply
+<br /><img alt="sceenshot" src="../img/commotion-10-confirm-configuration.png" /></p>
+<h2 id="notes">Notes</h2>
+<h3 id="24ghz-vs-5ghz">2.4GHz vs 5GHz</h3>
+<p>We recommend that you use 2.4GHz over 5GHz to connect to <a href="..">CorbinMesh</a>. Our real world testing showed that we could get roughly 4x the distance using 2.4GHz compared to 5GHz. If your creating links inside your house or to your direct neighbors you might benefit from using 5GHz, but the signal drops off after roughly 200m with a clear <a href="../terms/#line-of-sight">line of sight</a>.</p>
+<p>If you&rsquo;re mounting a [node] on your roof, don&rsquo;t spend extra money getting a dual radio model as you probably won&rsquo;t see any benefit from it, unless you plan to mesh with an indoor node. If you&rsquo;re doing this, it&rsquo;s probably worthwhile considering meshing over Ethernet links.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Map images <a rel="license" href="http://www.openstreetmap.org/copyright">&#169; OpenStreetMap contributors</a>.<br />Shreenshots of Commotion <a rel="license" href="http://commotionwireless.net/about/license-privacy/">Copyright &#169; 2013 Josh King</a>.<br /><a href="http://corbinmesh.net/">CorbinMesh</a> content by David Marsh is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+
+        <!--
+        MkDocs version  : 0.12.2
+        Docs Build Date : 2015-08-28 13:12:56.301877
+        -->
+    </body>
+</html>
